@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Footer(){return <footer className="border-t border-white/10 mt-12"><div className="container-main py-8 flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-muted"><p><Link className="text-white font-extrabold text-base" href="/">evnivo.</Link> &nbsp; Discover moments. Book experiences.</p><p>© {new Date().getFullYear()} EVNIVO · Demo project, not a live ticket seller</p></div></footer>}
