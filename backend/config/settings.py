@@ -75,8 +75,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 ALLOWED_HOSTS = [
-    "evnivo.sagarroy.com",
     "localhost",
     "127.0.0.1",
-  ".vercel.app"
+    "backend-sl9f.vercel.app"
 ]
