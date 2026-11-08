@@ -77,5 +77,6 @@ CSRF_TRUSTED_ORIGINS = [
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "backend-sl9f.vercel.app"
+    "backend-sl9f.vercel.app",
+    "backend-sl9f-l29bv4ct2-bssltd.vercel.app"
 ]
