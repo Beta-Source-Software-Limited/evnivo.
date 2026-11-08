@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'development-only-not-for-production')
 DEBUG = os.getenv('DJANGO_DEBUG', 'False').lower() == 'true'
-# ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,.vercel.app').split(',')
+ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,*.vercel.app').split(',')
 INSTALLED_APPS = [
     'django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes',
     'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles',
@@ -74,9 +74,3 @@ CSRF_TRUSTED_ORIGINS = [
     "https://evnivo.sagarroy.com",
 ]
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "backend-sl9f.vercel.app",
-    "backend-sl9f-l29bv4ct2-bssltd.vercel.app"
-]
