@@ -72,14 +72,11 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://evnivo.sagarroy.com",
-    "http://localhost:3000",
-    "http://localhost:5173",
-    ".vercel.app"
 ]
 
 ALLOWED_HOSTS = [
     "evnivo.sagarroy.com",
     "localhost",
     "127.0.0.1",
-    ".vercel.app"
+  ".vercel.app"
 ]
